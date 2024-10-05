@@ -3,12 +3,10 @@ import { isNative } from "../helpers/device";
 import { isEqual } from "lodash";
 
 const DEFAULT_LEMMY_SERVERS = ["lemmy.world"];
+const DEFAULT_FEDIVERSER_SITE = "https://fediverser.network";
 
 let _customServers = DEFAULT_LEMMY_SERVERS;
 
-export function getCustomServers() {
-  return _customServers;
-}
 
 export function getDefaultServer() {
   return _customServers[0]!;

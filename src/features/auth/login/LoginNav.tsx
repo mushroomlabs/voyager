@@ -1,5 +1,5 @@
 import { IonNav, IonSpinner } from "@ionic/react";
-import Welcome from "./welcome/Welcome";
+import Wizard from "./onboarding/Wizard";
 import { styled } from "@linaria/react";
 import { useCallback, useContext } from "react";
 import { IonNavCustomEvent } from "@ionic/core";
@@ -37,7 +37,7 @@ export default function LoginNav() {
 
   return (
     <IonNav
-      root={() => <Welcome />}
+      root={() => <Wizard />}
       onIonNavWillChange={blurDocument}
       onIonNavDidChange={onIonNavDidChange}
     />

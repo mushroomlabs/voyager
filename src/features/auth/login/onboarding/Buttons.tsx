@@ -63,6 +63,13 @@ export default function Buttons() {
       <Container ref={ref}>
         <IonButton
           expand="block"
+          onClick={() => console.log("Go to sign-in")}
+        >
+          Sign In
+        </IonButton>
+
+        <IonButton
+          expand="block"
           onClick={() => startJoinFlow(connectedInstance)}
           disabled={loadingJoin}
         >
